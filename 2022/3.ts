@@ -12,7 +12,7 @@ const getLetterValue = (letter: string) => {
     return letter.charCodeAt(0) - 96
 };
 
-printForLine("input3", (line) => {
+printForLine("3", (line) => {
     // split line into half
     const half = line.length / 2;
     const firstHalf = line.slice(0, half);
@@ -29,7 +29,7 @@ printForLine("input3", (line) => {
 
 // part 2: get the sum of values of letters that are in 3 following lines
 
-printForLine("input3", (line, index, input) => {
+printForLine("3", (line, index, input) => {
     // every 3rd line
     if (index % 3 === 0) {
         // // get 3 lines
